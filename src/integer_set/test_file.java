@@ -4,14 +4,16 @@ import java.util.ArrayList;
 
 public class test_file {
 	
-	//this is my second commit
-	//this is my second commit
-    
+
+	
+	
+    /**
+     * 
+     * @param args
+     * @throws IntegerSetException
+     */
     public static void main(String[] args) throws IntegerSetException {
-    	//this is my second commit
-    	//this is my second commit
-    	//this is my second commit
-    	//this is my second commit
+    	
         
         
         
@@ -21,7 +23,7 @@ public class test_file {
         
         
         
-        //fills the two objects sset
+        //fills the two objects set
         
         set1.add(1);
         set1.add(3);
