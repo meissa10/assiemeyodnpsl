@@ -1,23 +1,41 @@
 package integer_set;
 
 import java.util.ArrayList;
+
+
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * 
+ * @author meissandoye
+ *
+ */
+
 public class integerSet {
     
     
     
-    
+    /**
+     * 
+     */
     private  List<Integer>  set = new ArrayList<Integer>();
     
-    
+  
+    /**
+     * 
+     */
     public void clear() {
         set.clear();
     }
     
+    
+    /**
+     * 
+     * @param num
+     */
     public void add(int num) {
         
         for(int i=0;i<set.size();i++) {
@@ -29,6 +47,11 @@ public class integerSet {
         set.add(num);
     }
     
+    
+    /**
+     * 
+     * @param num
+     */
     public void remove(int num) {
         
         
@@ -43,9 +66,20 @@ public class integerSet {
         
     }
     
+    /**
+     * 
+     * @return
+     */
     public int length() {
         return set.size();
     }
+    
+    
+    /**
+     * 
+     * @param b
+     * @return
+     */
     
     public boolean equals( integerSet b) {
         if(b.set.size()!=set.size()) {
@@ -65,6 +99,13 @@ public class integerSet {
         return true;
     }
     
+    
+    
+    /**
+     * 
+     * @param num
+     * @return
+     */
     public boolean contains( int num) {
         for(int i=0;  i<set.size(); i++){
             if(set.get(i) == num) {
@@ -75,6 +116,14 @@ public class integerSet {
         return false;
         
     }
+    
+    
+    
+    /**
+     * 
+     * @return
+     * @throws IntegerSetException
+     */
     
     public int largest() throws IntegerSetException {
         
@@ -101,6 +150,14 @@ public class integerSet {
         
     }
     
+    
+    
+    /**
+     * 
+     * @return
+     * @throws IntegerSetException
+     */
+    
     public int smallest() throws IntegerSetException {
         
         if(set.size()==0) {
@@ -123,7 +180,10 @@ public class integerSet {
         
     }
     
-    
+    /**
+     * 
+     * @param list2
+     */
     
     public  void  union(integerSet list2) {
         
@@ -153,6 +213,13 @@ public class integerSet {
         
     }
     
+    
+    /**
+     * 
+     * @param list2
+     * @return
+     */
+    
     public integerSet intersect(integerSet list2) {
         
         
@@ -179,7 +246,10 @@ public class integerSet {
         
     }
     
-    
+    /**
+     * 
+     * @return
+     */
     boolean isEmpty() {
         if(set.size()==0) {
             return true;
@@ -188,7 +258,9 @@ public class integerSet {
     }
     
     
-    
+    /**
+     * 
+     */
     public String toString() {
         String statement="";
         for(int i: set) {
@@ -198,7 +270,11 @@ public class integerSet {
     }
     
     
-    
+    /**
+     * 
+     * @param list2
+     * @return
+     */
     public  integerSet diff(integerSet list2) {
         integerSet list3 = new integerSet();
         

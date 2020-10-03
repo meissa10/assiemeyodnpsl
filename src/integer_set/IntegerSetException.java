@@ -1,6 +1,10 @@
 package integer_set;
 
-
+/**
+ * 
+ * @author meissandoye
+ *
+ */
 class IntegerSetException extends Exception{
     
     public  IntegerSetException(){
