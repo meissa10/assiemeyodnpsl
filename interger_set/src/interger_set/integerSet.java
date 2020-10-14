@@ -132,7 +132,7 @@ public class integerSet {
             
             
             
-            IntegerSetException e =new IntegerSetException();
+        	IntegerSetException e =new IntegerSetException();
             throw e;
             
             
@@ -162,7 +162,7 @@ public class integerSet {
         
         if(set.size()==0) {
             
-            IntegerSetException e =new IntegerSetException();
+        	IntegerSetException e =new IntegerSetException();
             throw e;
             
             
