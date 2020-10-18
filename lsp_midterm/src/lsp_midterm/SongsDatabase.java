@@ -20,11 +20,11 @@ public class SongsDatabase {
     	
     	else{
             
-            Set<String> newGenre = new HashSet<String>();
+            Set<String> type = new HashSet<String>();
             
-            newGenre.add(songTitle);
+            type.add(songTitle);
             
-            genreMap.put(genre,newGenre);
+            genreMap.put(genre,type);
             
             
         }
