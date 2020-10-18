@@ -1,5 +1,7 @@
 package lsp_midterm;
 
+import java.util.*;
+
 public class Test_file {
 
 	public static void main(String[] args) {
@@ -25,6 +27,67 @@ public class Test_file {
 		System.out.println("The size of Range e is:"+ e.size());
 		System.out.println("The size of Range i is:"+ i.size());
 		System.out.println("The size of Range s is:"+ s.size());
+		
+		
+		
+		System.out.println("");
+		System.out.println("");
+		System.out.println("");
+		
+		
+		
+		// Testing the SongsDatabase class and its different methods.
+		SongsDatabase playlist= new SongsDatabase();
+		
+
+		playlist.addSong("Rap","The Box");
+		playlist.addSong("Rap","Paranoia");
+		playlist.addSong("French Soul","Jaloux");
+		playlist.addSong("French Soul","Dieu Merci");
+		playlist.addSong("Soul","All of me");
+		playlist.addSong("Afro","No stress");
+		playlist.addSong("Afro","Ye");
+		playlist.addSong("Afro","Level Up");
+
+        
+        Set<String> set = playlist.getSongs("Afro");
+        
+        
+        
+        
+        
+        System.out.println("Afro Songs:");
+        
+        Iterator it = set.iterator();
+        
+        
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        
+        
+        System.out.println("");
+        System.out.println("");
+        System.out.println("French Soul:");
+        
+        
+        set = playlist.getSongs("French Soul");
+        
+        it = set.iterator();
+        
+        
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        
+        System.out.println("");
+        
+        
+
+        System.out.println("Genre of Jaloux : "+ playlist.getGenreOfSong("Jaloux"));
+        
+        
+        System.out.println("The genre of Paranoia is a "+ playlist.getGenreOfSong("Paranoia")+" song.");
 		
 		
 		
