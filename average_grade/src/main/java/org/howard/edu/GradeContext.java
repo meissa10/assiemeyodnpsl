@@ -16,14 +16,22 @@ public class GradeContext {
 		
 	}
 	
-	public int get_median(List<Integer> arr) {
-		if(arr.size()%2 ==0) {
-			return  (arr.get(arr.size()/2)+arr.get((arr.size()/2+1)-1))/2;
+	public int get_median(List<Integer> arr) throws EmptyListException {
+		
+		if(arr.size()==0) {
+			EmptyListException e  =new EmptyListException();
+			throw e;
+		}
+		else {
+			if(arr.size()%2 ==0) {
+			return  (arr.get(arr.size()/2)+arr.get((arr.size()/2)-1))/2;
 			
 		}
 		else {
 			return arr.get(arr.size()/2);
 		}
+		}
+		
 		
 	}
 
