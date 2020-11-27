@@ -18,7 +18,7 @@ public class test_file {
      * @throws IntegerSetException
      */
 	
-    public static void main(String[] args) throws IntegerSetException {
+    public static void main(String[] args)  {
     	
         
         
