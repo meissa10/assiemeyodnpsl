@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.howard.edu","l":"DropTwoLowestGradeStrategy"},{"p":"org.howard.edu","l":"EmptyListException"},{"p":"org.howard.edu","l":"GradeContext"},{"p":"org.howard.edu","l":"GradeContextTest"},{"p":"org.howard.edu","l":"GradeStrategy"},{"p":"org.howard.edu","l":"StandardGradeStrategy"}]

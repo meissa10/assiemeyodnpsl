@@ -13,7 +13,6 @@ import java.util.*;
  * the two  lowest grade
  *
  */
-
 public class DropTwoLowestGradeStrategy implements GradeStrategy {
 	
 	/**

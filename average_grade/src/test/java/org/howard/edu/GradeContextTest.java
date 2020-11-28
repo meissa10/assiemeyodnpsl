@@ -11,6 +11,11 @@ import org.junit.jupiter.api.Test;
 import org.junit.rules.ExpectedException;
 
 
+/**
+ * This class  tests all the methods of the average_grade project
+ * @author meissandoye
+ *
+ */
 class GradeContextTest {
 	private GradeContext avg1= new GradeContext();
 	private GradeContext avg2= new GradeContext();
@@ -27,8 +32,8 @@ class GradeContextTest {
 
 	@BeforeEach
 	void setUp() throws EmptyListException {
-		avg1.setAverage_computation_strategy(new StandardGradeStrategy());
-		avg2.setAverage_computation_strategy(new DropTwoLowestGradeStrategy());
+		avg1.setGradeStrategy(new StandardGradeStrategy());
+		avg2.setGradeStrategy(new DropTwoLowestGradeStrategy());
 		arr.add(100);
 		arr.add(90);
 		arr.add(80);
@@ -48,7 +53,7 @@ class GradeContextTest {
 	@Test
 	
 	/**
-	 * 
+	 *   tests different scenarios for an empty list
 	 * @throws EmptyListException
 	 */
 	void testget_average_grade_Exception() throws EmptyListException {
@@ -72,7 +77,7 @@ class GradeContextTest {
 
 	@Test
 	/**
-	 * 
+	 * tries  to  get the average
 	 * @throws EmptyListException
 	 */
 	void testget_average_grade()  throws EmptyListException {
@@ -83,7 +88,7 @@ class GradeContextTest {
 	
 	
 	/**
-	 * 
+	 * tries  to  get the median
 	 * @throws EmptyListException
 	 */
 	@Test
@@ -95,7 +100,7 @@ class GradeContextTest {
 	}
 	
 	/**
-	 * 
+	 * tests different scenarios for an empty list
 	 * @throws EmptyListException
 	 */
 	
