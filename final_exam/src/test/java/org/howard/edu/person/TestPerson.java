@@ -28,6 +28,10 @@ class TestPerson {
     
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
+		
+		
+		
+		
 	}
 
 	@BeforeEach
@@ -45,13 +49,16 @@ class TestPerson {
 	
 	
 	@Test
-	void testreadPersons() throws FileNotFoundException,Exception{
+	void testreadPersons() throws FileNotFoundException{
 		List<Person> expected=new ArrayList<Person>();
 		expected.add(p4);
 		expected.add(p5);
 		expected.add(p6);
 		
+		
 		assertEquals(expected, p1.readPersons("csvFile1.txt"));
+		
+		
 		
 		
 	}
@@ -81,16 +88,18 @@ class TestPerson {
 	}
 	
 	@Test
-	void testCollectionSorting() throws FileNotFoundException,Exception{
+	void testCollectionSorting() throws FileNotFoundException{
 		List<Person> expected1=new ArrayList<Person>();
 		expected1.add(p4);
 		
 		expected1.add(p6);
 		expected1.add(p5);
+		expected1.add(p1);
 		Collections.sort(expected1);
 		
 		List<Person> operation  = p2.readPersons("csvFile1.txt");
 		
+		operation.add(p1);
 		Collections.sort(operation);
 		
 		assertEquals(expected1, operation);
