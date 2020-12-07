@@ -121,5 +121,21 @@ public class Person implements Comparable<Person> {
     public int compareTo(Person p2){
     	return Integer.compare(age, p2.age);
     }
+    
+    /**
+     * 
+     * @return int age
+     */
+    public int getAge() {
+    	return age;
+    }
+    
+    /**
+     * 
+     * @return String name
+     */
+    public String getName() {
+    	return name;
+    }
 
 }
